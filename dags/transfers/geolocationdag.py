@@ -20,7 +20,7 @@ with DAG(
         filename='seif/geolocation/geolocation.csv',  # GCS object path
         export_format='csv',  # Export format (csv, json, etc.)
     )
-
+        
     # load data from GCS to BigQuery
     load_to_bigquery = GCSToBigQueryOperator(
         task_id='load_gcs_to_bigquery',
