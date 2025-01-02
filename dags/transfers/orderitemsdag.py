@@ -16,7 +16,7 @@ with DAG(
     transfer_to_gcs = PostgresToGCSOperator(
         task_id='transfer_postgres_to_gcs',
         postgres_conn_id='postgres_conn',  # Your PostgreSQL connection ID
-        sql='SELECT * FROM customers;',  # Your SQL query
+        sql='SELECT * FROM order_items;',  # Your SQL query
         bucket='ready-d25-postgres-to-gcs',  # Your GCS bucket name
         filename='seif/order_items/order_items.csv',  # GCS object path
         export_format='csv',  # Export format (csv, json, etc.)
