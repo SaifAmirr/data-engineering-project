@@ -1,0 +1,1 @@
+SELECT * FROM `ready-de-25.playground.geolocation_saif`

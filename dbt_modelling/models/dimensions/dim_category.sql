@@ -1,0 +1,1 @@
+SELECT * FROM `ready-de-25.playground.product_category_name_translation_saif`
