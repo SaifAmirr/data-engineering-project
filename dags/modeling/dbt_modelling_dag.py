@@ -13,7 +13,6 @@ with DAG(
     
 
     trigger_dbt_job = DbtCloudRunJobTrigger(
-        task_id='trigger_dbt_job',
         conn_id='dbt_cloud_default',  # Specify your Airflow connection ID
         run_id=70471823413982,  # Replace with your dbt Cloud job ID
         account_id = 70471823411227,
@@ -23,5 +22,5 @@ with DAG(
     
 
     
-
+    trigger_dbt_job
     
