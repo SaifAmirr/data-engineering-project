@@ -1,1 +1,1 @@
-SELECT * FROM `ready-de-25.playground.order_payments_saif`
+SELECT * FROM `ready-de-25.playground.order_payments_saif` WHERE payment_type IS NOT NULL AND payment_type != 'not_defined'
