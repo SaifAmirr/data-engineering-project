@@ -22,5 +22,5 @@ with DAG(
     
 
     
-
+    trigger_dbt_job
     
